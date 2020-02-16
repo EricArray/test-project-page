@@ -2,11 +2,13 @@
 <html>
   <script>
     function onButtonClick() {
-      window.alert('hola');
+      const num = document.findElementById('num');
+      window.alert('hola', num.value);
     }
   </script>
   <body>
     <h1>Testing HTML</h1>
+    <input id="num" type="text">
     <button onclick="onButtonClick()">alert</button>
   </body>
 </html>
